@@ -1,0 +1,140 @@
+<!--
+@element
+  name: paper-card
+  version: 0.1
+@authors
+  Dev: Samuel LESPES CARDILLO (iam@samuelcardillo.com / @cyberwarfighte1 / samuelcardillo.com)
+  CSS : Kosta Tsamouras (@Kosta_kos)
+@license
+  MIT (http://opensource.org/licenses/MIT)
+-->
+
+<!doctype html>
+<html>
+
+  <head>
+    <title>paper-card</title>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../../bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="../../bower_components/polymer/polymer.html">
+    <link rel="import" href="../../bower_components/paper-button/paper-button.html"/>
+    <link rel="import" href="../../bower_components/paper-icon-button/paper-icon-button.html"/>
+
+    <link rel="import" href="paper-card.html"/>
+
+    <style type="text/css">
+      body {
+        background: #fafafa;
+        font-family: 'Roboto', 'Helvetica Neue', Helvetica, Arial, sans-serif;
+        color: #333;
+        margin-top: 8px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <h1>With images/legend/paper-fab :</h1><br/>
+    <paper-card
+      elevation="3"
+      width="350"
+      img="http://lorempixel.com/650/400" 
+      legend="Lorem ipsum dolor sit"
+      icon="home">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="horizontal layout justified center buttons">
+        <paper-icon-button icon="store"></paper-icon-button>               
+        <div class="flex"></div>
+        <paper-button>DISMISS</paper-button>
+        <paper-button>ACCEPT</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card
+      elevation="3"
+      width="350"
+      img="http://lorempixel.com/650/400" 
+      legend="Lorem ipsum dolor sit">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="horizontal layout justified center buttons">
+        <paper-icon-button icon="store"></paper-icon-button>               
+        <div class="flex"></div>
+        <paper-button>DISMISS</paper-button>
+        <paper-button>ACCEPT</paper-button>
+      </div>
+    </paper-card>
+
+    <paper-card
+      elevation="3"
+      width="350"
+      img="http://lorempixel.com/650/400">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="horizontal layout justified center buttons">
+        <paper-icon-button icon="store"></paper-icon-button>               
+        <div class="flex"></div>
+        <paper-button>DISMISS</paper-button>
+        <paper-button>ACCEPT</paper-button>
+      </div>
+    </paper-card><br/>
+
+    <h2>Without images/legend/paper-fab :</h2><br/>
+    <paper-card
+      elevation="3"
+      width="350">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="horizontal layout justified center buttons">
+        <paper-icon-button icon="store"></paper-icon-button>               
+        <div class="flex"></div>
+        <paper-button>DISMISS</paper-button>
+        <paper-button>ACCEPT</paper-button>
+      </div>
+    </paper-card>
+    <h2>With & without buttons:</h2><br/>
+    <paper-card
+      elevation="3"
+      width="350">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+    </paper-card>
+    <paper-card
+      elevation="3"
+      width="350">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+      tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+      quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+      consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+      cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+      proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      <div class="horizontal layout justified center buttons">
+        <paper-button>DISMISS</paper-button>
+        <paper-button>ACCEPT</paper-button>
+      </div>
+    </paper-card>
+  </body>
+
+</html>

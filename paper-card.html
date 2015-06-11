@@ -1,0 +1,124 @@
+<!--
+@element
+  name: paper-card
+  version: 0.1
+@authors
+  Dev: Samuel LESPES CARDILLO (iam@samuelcardillo.com / @cyberwarfighte1 / samuelcardillo.com)
+  CSS : Kosta Tsamouras (@Kosta_kos)
+@license
+  MIT (http://opensource.org/licenses/MIT)
+-->
+
+<link rel="import" href="../../bower_components/paper-material/paper-material.html"/>
+<link rel="import" href="../../bower_components/paper-fab/paper-fab.html"/>
+<link rel="import" href="../../bower_components/iron-icons/iron-icons.html"/>
+
+<dom-module id="paper-card">
+	<style>
+  	:host {
+  		display: inline-block;
+  		margin: 0 8px 8px ;
+  		font-size: 14px;
+  		text-align: justify;
+  		line-height: 10px;
+  		--paper-fab-background: var(--accent-color);
+  	}
+  	
+  	paper-material {
+  		border-radius: 2px;
+  		background-color: white;
+  	}	
+  	
+  	.picture {
+  		position: relative;
+  		margin-bottom: 24px;
+  	}
+  	.picture img {
+  		border-top-right-radius: 2px;
+  		border-top-left-radius: 2px;
+  		width: 100%;
+  	}
+  	.legend {
+  		position: absolute;
+  		background: rgba(0,0,0,0.4);
+  		bottom: 0;
+  		color: white;
+  		height: 50px;
+  		padding: 0 16px;
+  		left: 0; right: 0;
+  	}
+  	paper-fab {
+  		position: absolute;
+  		right: 10px;
+  		bottom: -18px;
+  		z-index: 10;
+  	}
+  	
+  	.content ::content {
+  		padding: 0 16px 8px;
+  		font-weight: 300;
+  		color: var(--secondary-text-color);
+  		line-height: 24px;
+  	}
+  	::content.buttons {
+  		margin-top: 8px;
+  	}
+  	::content paper-button, ::content paper-icon-button {
+  		font-weight: 500;
+  		color: var(--accent-color);
+  	}
+	</style>
+
+	<template>
+
+		<paper-material animated elevation="{{elevation}}">
+			<div class="vertical layout">
+				<!-- START PAPER-CARD PICTURE !-->
+				<template is="dom-if" if="{{img}}">
+					<div class="picture">
+						<img src="{{img}}" height="{{height}}" alt="">
+						<!-- START PAPER-CARD PICTURE LEGEND !-->
+						<template is="dom-if" if="{{legend}}">
+							<div class="legend horizontal layout center">
+								<span>{{legend}}</span>
+								<!-- START PAPER-CARD FAB !-->
+								<template is="dom-if" if="{{icon}}">
+									<paper-fab mini icon="{{icon}}"></paper-fab>
+								</template>
+								<!-- END PAPER-CARD FAB !-->
+							</div>
+						</template>
+						<!-- END PAPER-CARD PICTURE LEGEND !--> 
+					</div>
+				</template>
+				<!-- END PAPER-CARD PICTURE !-->
+
+				<!-- START PAPER-CARD CONTENT !-->
+				<div class="content">
+					<content></content>
+				</div>
+				<!-- END PAPER-CARD CONTENT !-->
+			</div>
+		</paper-material>
+
+	</template>
+</dom-module>
+
+<script>
+	Polymer({
+		is: "paper-card",
+
+		properties: {
+			width: {
+				type: Number,
+				observer: "_changeWidth",
+			},
+		},
+
+		_changeWidth: function(data){
+			this.style.width = data + "px";
+			this.querySelector(".content").width = data + "px";
+		},
+
+	})
+</script>

@@ -1,0 +1,42 @@
+{
+  "name": "paper-card",
+  "version": "0.0.1",
+  "description": "Material style `card` with Polymer",
+  "authors": [
+    "Samuel LESPES CARDILLO <iam@samuelcardillo.com>"
+  ],
+  "keywords": [
+    "web-components",
+    "web-component",
+    "polymer",
+    "material design",
+    "material",
+    "design",
+    "paper-card",
+    "card",
+    "material card",
+    "polymer card"
+  ],
+  "main": [
+    "paper-card.html"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/PolymerElements/iron-ajax.git"
+  },
+  "license": "MIT",
+  "homepage": "https://github.com/PolymerElements/iron-ajax",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "polymer": "Polymer/polymer#^1.0.0",
+    "paper-material": "^1.0.0",
+    "paper-fab": "^1.0.0"
+  }
+}
