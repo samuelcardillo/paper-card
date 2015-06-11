@@ -36,7 +36,7 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.0.0",
-    "paper-material": "^1.0.0",
-    "paper-fab": "^1.0.0"
+    "paper-material": "PolymerElements/paper-material#^1.0.0",
+    "paper-fab": "PolymerElements/paper-fab#^1.0.0"
   }
 }
